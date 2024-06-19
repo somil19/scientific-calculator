@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>scientific_Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Radhe Radhe  -->
+    <h1>Scientific Calculator</h1>
+    <div class="calculator">
+      <input type="text" id="display" value="0" readonly />
+      <div class="buttons">
+        <!-- Simple Calculator Buttons -->
+        <div id="simple_calc">
+          <div class="button-row">
+            <button class="simple-btn">(</button>
+            <button class="simple-btn">)</button>
+            <button class="simple-btn">%</button>
+
+            <button class="simple-btn">AC</button>
+          </div>
+          <div class="button-row">
+            <button class="simple-btn">7</button>
+            <button class="simple-btn">8</button>
+            <button class="simple-btn">9</button>
+            <button class="simple-btn">÷</button>
+          </div>
+          <div class="button-row">
+            <button class="simple-btn">4</button>
+            <button class="simple-btn">5</button>
+            <button class="simple-btn">6</button>
+            <button class="simple-btn">×</button>
+          </div>
+          <div class="button-row">
+            <button class="simple-btn">1</button>
+            <button class="simple-btn">2</button>
+            <button class="simple-btn">3</button>
+            <button class="simple-btn">-</button>
+          </div>
+          <div class="button-row">
+            <button class="simple-btn">0</button>
+            <button class="simple-btn">.</button>
+            <button class="simple-btn">=</button>
+            <button class="simple-btn">+</button>
+          </div>
+        </div>
+        <!-- Scientific Calculator Buttons (hidden by default) -->
+        <div id="scien-cal">
+          <div class="button-row">
+            <button class="scie-btn rad active-mode">Rad</button>
+            <button class="scie-btn deg">Deg</button>
+            <button class="scie-btn">ln</button>
+            <button class="scie-btn">x!</button>
+          </div>
+          <div class="button-row">
+            <button class="scie-btn">sin</button>
+            <button class="scie-btn">cos</button>
+            <button class="scie-btn">tan</button>
+            <button class="scie-btn">π</button>
+          </div>
+          <div class="button-row">
+            <button class="scie-btn">log</button>
+            <button class="scie-btn">Exp</button>
+            <button class="scie-btn">sqrt</button>
+            <button class="scie-btn">X^Y</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="choices">
+          <div class="num">123</div>
+          <div class="func">Fx</div>
+        </div>
+        <button class="backspace">⌫</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,112 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #fb74f0; */
+  background-image: linear-gradient(to right, orange, red, orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: max-content;
+  height: auto;
+}
+
+#display {
+  width: 95%;
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.simple-btn,
+.scie-btn {
+  width: 20%;
+  height: 50px;
+  font-size: 18px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.simple-btn:hover {
+  background-color: #e0e0e0;
+}
+.scie-btn:hover {
+  background-color: #e0e0e0;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choices {
+  display: flex;
+
+  color: white;
+
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  cursor: pointer;
+}
+.num {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  background-color: green;
+  padding: 13px;
+}
+.func {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: orangered;
+  padding: 13px;
+}
+.num:hover {
+  background-color: #05bd05;
+}
+.func:hover {
+  background-color: lightcoral;
+}
+.scien-cal {
+  display: none;
+}
+
+.active-mode {
+  background-color: #e1ff00;
+  color: black;
+}
+.backspace {
+  color: white;
+  background-color: black;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
